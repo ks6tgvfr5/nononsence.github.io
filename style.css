@@ -1,16 +1,31 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+main {
   max-width: 800px;
   margin: auto;
-  padding: 20px;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: #444;
-}
-
-a:hover {
-  text-decoration: underline;
+  padding: 30px;
 }
