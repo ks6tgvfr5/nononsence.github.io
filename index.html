@@ -2,50 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="No Nonsense - A space for anonymous writing and unfiltered thoughts">
-  
   <title>No Nonsense</title>
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-<header>
-  <h1>No Nonsense</h1>
-  <p>Anonymous writing, unfiltered thoughts.</p>
+<header class="topbar">
+  <h1>NoNonsense</h1>
 </header>
 
-<nav aria-label="Main navigation">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="stories.html">Stories</a></li>
-  </ul>
+<nav class="tabs">
+  <a class="active">Home</a>
+  <a>Discover</a>
+  <a>Write</a>
+  <a>Profile</a>
 </nav>
 
-<main>
-  <h2>Welcome 🌙</h2>
+<main class="feed">
 
-  <p>
-    This is a simple content-based website built using GitHub Pages.
-    No Nonsense is a space for stories, reflections, and words that don’t try too hard.
-  </p>
+  <div class="story-card">
+    <div class="cover"></div>
+    <div class="story-info">
+      <h2>The Quiet Between Us</h2>
+      <p class="desc">
+        A slow-burn story about unsaid words, missed chances,
+        and the spaces between moments.
+      </p>
+      <span class="meta">Romance · 12k reads</span>
+    </div>
+  </div>
 
-  <h3>What you'll find here</h3>
-  <ul>
-    <li>Short fiction</li>
-    <li>Experimental writing</li>
-    <li>Slow reads</li>
-  </ul>
+  <div class="story-card">
+    <div class="cover"></div>
+    <div class="story-info">
+      <h2>Midnight Notes</h2>
+      <p class="desc">
+        Short confessions written at 2 AM when the world is asleep
+        and honesty is loud.
+      </p>
+      <span class="meta">Poetry · 8k reads</span>
+    </div>
+  </div>
 
-  <p>More content coming soon.</p>
+  <div class="story-card">
+    <div class="cover"></div>
+    <div class="story-info">
+      <h2>Unsent Messages</h2>
+      <p class="desc">
+        Messages typed, deleted, rewritten — but never sent.
+      </p>
+      <span class="meta">Drama · 21k reads</span>
+    </div>
+  </div>
+
 </main>
-
-<footer>
-  <p>© 2026 No Nonsense</p>
-</footer>
 
 </body>
 </html>
