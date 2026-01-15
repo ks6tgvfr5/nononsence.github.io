@@ -1,89 +1,90 @@
-/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  background: #f6f6f6;
+  color: #222;
 }
 
-/* Header & Footer */
-header, footer {
-  text-align: center;
-  padding: 25px 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+/* TOP BAR */
+
+.topbar {
+  background: #ff6122;
+  color: white;
+  padding: 16px 20px;
+  font-size: 1.3rem;
 }
 
-/* Navigation */
-nav {
-  text-align: center;
-  padding: 15px;
-  background-color: #f0f0f0;
+/* TABS */
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  border-bottom: 1px solid #ddd;
 }
 
-nav a {
-  margin: 0 12px;
+.tabs a {
+  padding: 12px;
   text-decoration: none;
-  color: #222;
-  font-weight: 600;
-  transition: color 0.3s ease;
-  padding: 5px 0;
-  display: inline-block;
+  color: #555;
+  font-weight: 500;
 }
 
-nav a:hover,
-nav a:focus {
-  color: #666;
+.tabs .active {
+  color: #ff6122;
+  border-bottom: 3px solid #ff6122;
 }
 
-nav a:focus {
-  outline: 2px solid #222;
-  outline-offset: 4px;
+/* FEED */
+
+.feed {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
 }
 
-/* Main Content */
-main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+/* STORY CARD */
+
+.story-card {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
 }
 
-/* Typography */
-h1, h2, h3 {
-  margin-top: 0;
-  line-height: 1.3;
+.story-card:hover {
+  transform: translateY(-4px);
 }
 
-h2 {
-  color: #222;
+.cover {
+  width: 110px;
+  background: linear-gradient(135deg, #ff6122, #ff9a70);
 }
 
-p, li {
-  max-width: 70ch; /* Optimal line length */
+.story-info {
+  padding: 14px;
+  flex: 1;
 }
 
-/* Lists */
-ul {
-  padding-left: 20px;
+.story-info h2 {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  main {
-    padding: 20px 15px;
-    margin: 20px 10px;
-  }
-  
-  header, footer {
-    padding: 15px 10px;
-  }
-  
-  nav a {
-    margin: 0 8px;
-    font-size: 0.95em;
-  }
+.desc {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: #888;
 }
